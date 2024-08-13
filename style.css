@@ -1,0 +1,95 @@
+/* Reset some default browser styles */
+body, h1, div, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(220, 87, 87);
+
+}
+
+#song-parent {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 320px;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/iamges/HD-wallpaper-phonograph-gramophone-music-king-music-recorder-old-music-player.jpg');
+}
+
+.container {
+    text-align: center;
+}
+
+.Mu-Heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #dfdfdf;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+    appearance: none;
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #2196F3;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.player-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    background: #2196F3;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ffef39;
+}
+
+button:focus {
+    outline: none;
+}
+
+#current-song {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff7f7;
+    font-family: 'Poppins', sans-serif; /* Apply the custom font here */
+    font-weight: 600; /* Use bold weight for better emphasis */
+}
